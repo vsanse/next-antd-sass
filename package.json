@@ -1,5 +1,5 @@
 {
-  "name": "with-ant-design-less",
+  "name": "nextjs-antdesign-sass",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
