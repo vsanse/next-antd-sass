@@ -2,7 +2,6 @@ import Router from 'next/router';
 import { StarFilled } from '@ant-design/icons';
 import NPprogress from 'nprogress';
 
-
 Router.onRouteChangeStart = () => {
     NPprogress.start();
 }
@@ -16,7 +15,7 @@ Router.onRouteChangeError  = () => {
 };
 
 
-export default function Header() {
+export default function AppHeader() {
     return (
         <>
         <div className="logo">

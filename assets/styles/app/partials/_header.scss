@@ -1,0 +1,22 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        margin: 0;
+        font-weight: 700;
+    }
+    .anticon {
+        color: $primary;
+    }
+}
+
+.header.ant-layout-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
+
+}

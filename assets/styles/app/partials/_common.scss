@@ -1,3 +1,19 @@
+.app.ant-layout {
+    line-height: 1.25;
+    letter-spacing: 0.05rem;
+    box-sizing: border-box;
+    // max-width: 72rem;
+    margin: 0 auto;
+    background: $white;
+    min-height: 100vh;
+    img {
+        max-width: 100%;
+    }
+    p {
+        margin: 0.3rem 0;
+    }
+}
+
 .loading-text{
     font-size: 0.875rem;
     font-weight: 500;
