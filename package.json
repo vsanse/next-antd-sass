@@ -16,11 +16,19 @@
     "less": "3.0.4",
     "less-vars-to-js": "1.3.0",
     "next": "latest",
+    "next-redux-saga": "^4.1.2",
+    "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",
     "nprogress": "^0.2.0",
     "null-loader": "2.0.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8"
+  }
 }

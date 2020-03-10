@@ -1,0 +1,2 @@
+export const LOADING = "LOADING"
+export const INTIATE_LOADING = "INTIATE_LOADING"
