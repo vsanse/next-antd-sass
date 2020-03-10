@@ -1,0 +1,31 @@
+.loading-text{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $primary;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+        font-size: 1.5rem;
+        animation-name: blink;
+        animation-duration: 1.4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        &:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        &:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+    }
+} 
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}

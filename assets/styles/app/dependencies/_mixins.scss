@@ -1,0 +1,83 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+
+// Small-down devices
+@mixin sm-down {
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+
+ // Medium-down devices
+ @mixin md-down {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+/*Border configuration for each direction
+Demo Code:  @include border(1px solid, #ccc, bottom top left right); 
+*/
+@mixin border($style, $color, $sides) {
+    @if ($style != "") {
+        @if ($sides == "") {
+            border: $style $color;
+        } @else {
+            @each $side in $sides {
+                @if (
+                    $side ==
+                        "top" or
+                        $side ==
+                        "right" or
+                        $side ==
+                        "bottom" or
+                        $side ==
+                        "left"
+                ) {
+                    border-#{$side}: $style $color;
+                }
+            }
+        }
+    }
+}
+
+@mixin  Proxima {
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
+}
